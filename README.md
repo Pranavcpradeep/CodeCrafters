@@ -8,22 +8,21 @@
 
 ## 📌 Team Information
 
-- **Team Name:**  
+- **Team Name:CODE CRAFTERS**  
 - **Team Members:**  
-  - Member 1 – Register No  
-  - Member 2 – Register No  
-  - Member 3 – Register No  
-  - Member 4 – Register No (if applicable)
+  - Member 1 – Pranav CP  
+  - Member 2 – Rino Joseph 
+  - Member 3 – Revathi Jayaraj V  
+  - Member 4 – Sriya K
 
 - **Problem Domain:**  
-- **Selected Problem Statement:**  
+- **Selected Problem Statement:Natural Disaster Management**  
 
 ---
 
 ## 🧩 Problem Description
+During Natural disasters or emergency situations,critical information is often scattered,delayed or unreliable,leading to poor coordination and increased risk to lives.The absence of timely,centralised,and trustworthy information creates confusion among citizens and responders during emergencies.
 
-Briefly describe the problem you are addressing.  
-Explain the background and why this problem is relevant.
 
 ---
 
@@ -31,35 +30,50 @@ Explain the background and why this problem is relevant.
 
 Describe your solution clearly:
 - What is your approach?
+-  Approach Behind the Problem
+During emergency situations, critical information is often delayed or scattered across multiple sources, causing confusion and slow response. The proposed approach is to develop a centralized, web-based emergency information system that provides users with location-based disaster alerts, safety precautions, and emergency resources through a single platform. A website is chosen to ensure easy access across devices without installation.
+
 - How does it solve the problem?
+The system centralizes disaster warnings, precautions, emergency contact numbers, and safe location details in one place. By using user location data, it delivers relevant alerts and guidance based on the type of disaster. Instant access to emergency numbers and nearby safe locations helps users respond quickly, while SMS alerts ensure communication even during poor internet connectivity.
 - Key idea behind the solution.
+Key Idea Behind the Solution
+
+The key idea is to provide a simple, reliable, and location-aware emergency alert platform that delivers accurate information at the right time, helping reduce panic, improve coordination, and enhance public safety during disasters.
 
 ---
 
 ## ⚙️ Technology Stack
 
 List the tools and technologies used:
-- Programming Languages  
-- Frameworks / Libraries  
-- Tools / Platforms  
+- HTML,CSS,JavaScript
+ 
+- Frameworks / Libraries
+-  Browser Geolocation API/Google Maps Embed API
 
-Example:
-- HTML, CSS, JavaScript  
-- React / Flutter / Node.js  
-- Firebase / APIs (if any)
+- Tools / Platforms
+- Visual studio code,Chrome
 
 ---
 
 ## 🖥️ Implementation Details
 
 Explain how your project works:
-- Overall workflow
+- The system begins with user registration and login, including email, password, and phone number verification. After authentication, the user completes a profile with personal and emergency contact details. Once logged in, the user is directed to the main dashboard, where disaster alerts and news updates are displayed. Based on the user’s location, relevant warnings and precautions are shown. The user can access emergency numbers, view nearby safe locations on a map, and read disaster-specific precautions. In emergency situations, alerts can also be sent to registered mobile numbers via SMS.
+- 
 - Key features implemented
+- User sign-in with phone number and OTP-based verification (demo logic)
+User profile management with emergency contact details
+Location-based disaster alert display
+Centralized dashboard with emergency information
+Quick access to emergency contact numbers
+Map-based display of nearby safe locations
+Dedicated precautions page for different disaster types
 - Any challenges faced and how you solved them
-
+Real-time data and SMS integration were challenging due to time and technical constraints; these were simulated using predefined alerts and demo OTP logic. Location accuracy and privacy concerns were addressed by using location access only with user consent.
 ---
 
 ## 📂 Project Structure
+The project follows a simple, modular website structure to ensure clarity and ease of development. The system is divided into multiple web pages, each handling a specific function. The sign-in page manages user authentication and phone verification. The profile page collects user and emergency contact details. The main dashboard displays disaster alerts, news updates, and provides quick access to emergency numbers, safe locations, and precautions. Separate files are used for styling and logic, with CSS handling the user interface design and JavaScript managing navigation, validation, and location-based interactions. This structured approach improves maintainability and scalability.
 
 
 ---
