@@ -83,8 +83,26 @@ The project follows a simple, modular website structure to ensure clarity and ea
 Add screenshots of your website or application inside the `screenshots/` folder.
 
 Mention them here:
-- Screenshot 1 – Description  
-- Screenshot 2 – Description  
+- Screenshot 1 <img width="1918" height="1079" alt="Screenshot 2026-01-11 110106" src="https://github.com/user-attachments/assets/b610fe69-4c53-44d7-baec-03edcbf2f6b6" />
+Sign in page
+
+- Screenshot 2 <img width="1919" height="1079" alt="Screenshot 2026-01-11 110135" src="https://github.com/user-attachments/assets/c57d0740-2bcf-4ffa-a034-139eeed78d73" />
+Profile page
+
+- Screenshot 3 <img width="1918" height="1079" alt="Screenshot 2026-01-11 110144" src="https://github.com/user-attachments/assets/32f0eeed-c782-433b-b9f6-9a458dba02ff" />
+Home page
+
+- Screenshot 4 <img width="1835" height="1079" alt="Screenshot 2026-01-11 110158" src="https://github.com/user-attachments/assets/7e2d1143-781a-4795-93a5-bb7eb912dbb0" />
+Emergency numbers list
+
+- Screenshot 5 <img width="1918" height="1077" alt="Screenshot 2026-01-11 110225" src="https://github.com/user-attachments/assets/18fe023a-cdd9-4a4a-9c34-207e27ccbb41" />
+Safe spots and hospital locations
+
+- Screenshot 6 <img width="1919" height="1079" alt="Screenshot 2026-01-11 110242" src="https://github.com/user-attachments/assets/5d1a7be2-f9c7-4883-9f7f-cfac0a8f90aa" />
+Precautions for early knowledge
+
+- Screenshot 7 <img width="1918" height="1079" alt="Screenshot 2026-01-11 110303" src="https://github.com/user-attachments/assets/0f854620-b565-44df-a32a-c824d9eedf6c" />
+Weather forecast based on location
 
 *(Screenshots are mandatory for evaluation)*
 
