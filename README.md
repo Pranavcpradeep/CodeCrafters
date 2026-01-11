@@ -104,6 +104,9 @@ Precautions for early knowledge
 - Screenshot 7 <img width="1918" height="1079" alt="Screenshot 2026-01-11 110303" src="https://github.com/user-attachments/assets/0f854620-b565-44df-a32a-c824d9eedf6c" />
 Weather forecast based on location
 
+_ Screenshot 8 
+sms alert.
+
 *(Screenshots are mandatory for evaluation)*
 
 ---
