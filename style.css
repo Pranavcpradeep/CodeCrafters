@@ -1,0 +1,40 @@
+body {
+  font-family:Arial ;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+input, button {
+  padding: 10px;
+  margin: 8px;
+  width: 250px;
+}
+
+button {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.news {
+  background: yellow;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+
+
+
+header {
+  background-color: #0a3d62;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#map {
+  height: 90vh;
+  width: 100%;
+}

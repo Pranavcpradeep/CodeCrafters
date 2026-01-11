@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disaster Alert</title>
+</head>
+<body>
+
+<h2>Send Disaster SMS</h2>
+<button onclick="sendAlert()">Send Alert</button>
+<script src="script.js"></script>
+<script>
+
+function sendAlert() {
+  const phoneno = window.phone || "9999999999"; // Default number if not set
+  fetch("http://localhost:3000/send-sms", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message: "⚠️ Disaster Alert: Flood warning. Move to safe place immediately.",
+      numbers: [phoneno,]
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    alert("SMS sent successfully!");
+    console.log(data);
+  })
+  .catch(err => {
+    alert("SMS failed");
+    console.error(err);
+  });
+}
+</script>
+
+</body>
+</html>

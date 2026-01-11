@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Safe Spots - Palakkad</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="maps.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚨 Disaster Safe Spots</h1>
+            <p class="subtitle">Akathethara, Palakkad, Kerala, India</p>
+        </header>
+        
+        <div class="controls">
+            <button id="locate-btn" class="btn btn-primary">
+                📍 Get My Location
+            </button>
+            <button id="center-btn" class="btn btn-secondary">
+                🏠 Center to Akathethara
+            </button>
+            <div class="status" id="status">Ready to locate...</div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="info-panel">
+            <h2>Emergency Safe Spots</h2>
+            <div id="safe-spots-list" class="spots-list">
+                <!-- Safe spots will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <footer>
+            <p>Emergency Helpline: <strong>112</strong> | Disaster Management: <strong>1077</strong></p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="maps.js"></script>
+</body>
+</html>
