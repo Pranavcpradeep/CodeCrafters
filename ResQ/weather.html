@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Real Time</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather Forecast</h1>
+            <p class="subtitle">Real-Time Weather & Forecast</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="city-input" 
+                    placeholder="Search for a city..." 
+                    autocomplete="off"
+                >
+                <button id="search-btn" class="btn btn-primary">
+                    🔍 Search
+                </button>
+            </div>
+            <div id="dropdown" class="dropdown"></div>
+        </div>
+
+        <div class="weather-content">
+            <div class="weather-main">
+                <div id="weather-card" class="weather-card">
+                    <div class="weather-header">
+                        <h2 id="city-name">Search for a city</h2>
+                        <p id="date-time" class="date-time"></p>
+                    </div>
+                    <div class="weather-body">
+                        <div class="temperature-section">
+                            <div class="weather-icon" id="weather-icon">🌤️</div>
+                            <div class="temp-info">
+                                <span id="temperature" class="temperature">--</span>
+                                <span class="unit">°C</span>
+                            </div>
+                        </div>
+                        <div id="weather-description" class="weather-description">--</div>
+                        <div class="weather-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Feels Like</span>
+                                <span id="feels-like" class="detail-value">--°C</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Humidity</span>
+                                <span id="humidity" class="detail-value">--%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Wind Speed</span>
+                                <span id="wind-speed" class="detail-value">-- km/h</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Pressure</span>
+                                <span id="pressure" class="detail-value">-- hPa</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Visibility</span>
+                                <span id="visibility" class="detail-value">-- km</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">UV Index</span>
+                                <span id="uv-index" class="detail-value">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-section">
+                    <h3>5-Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-container">
+                        <!-- Forecast items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-map-section">
+                <h3>Weather Map</h3>
+                <div id="weather-map"></div>
+            </div>
+        </div>
+
+        <div class="recent-cities">
+            <h3>Recent Searches</h3>
+            <div id="recent-cities-list" class="recent-cities-list">
+                <!-- Recent cities will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <footer>
+            <p>Weather data provided by <strong>OpenWeatherMap</strong> | 
+            <a href="https://openweathermap.org/api" target="_blank">Get API Key</a></p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

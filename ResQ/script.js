@@ -4,8 +4,8 @@ function sendOTP() {
 
   if (pattern.test(email)) {
     const phone = document.getElementById("phone").value;
-  const pattern = /^[6-9]\d{9}$/;
-
+    const pattern = /^[6-9]\d{9}$/;
+    localStorage.setItem("phone", phone);
   if (pattern.test(phone)) {
     alert("OTP sent to your phone (Demo OTP: 1234)");
   } else {
@@ -45,13 +45,19 @@ function goToMain() {
 }
 
 function callEmergency() {
-  alert("Call 112 for Emergency");
+  window.location.href = "emergency.html";
 }
 
 function openMap() {
-  window.open("https://www.google.com/maps/search/hospital+near+me");
+  window.location.href = "maps.html";
 }
 
 function openPrecautions() {
   window.location.href = "precautions.html";
 }
+
+function weather() {
+  window.location.href = "weather.html";
+}
+
+
