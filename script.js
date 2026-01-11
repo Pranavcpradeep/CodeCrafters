@@ -5,7 +5,7 @@ function sendOTP() {
   if (pattern.test(email)) {
     const phone = document.getElementById("phone").value;
     const pattern = /^[6-9]\d{9}$/;
-    window.phone = phone;
+    localStorage.setItem("phone", phone);
   if (pattern.test(phone)) {
     alert("OTP sent to your phone (Demo OTP: 1234)");
   } else {
@@ -45,7 +45,7 @@ function goToMain() {
 }
 
 function callEmergency() {
-  alert("Call 112 for Emergency");
+  window.location.href = "emergency.html";
 }
 
 function openMap() {
@@ -59,53 +59,3 @@ function openPrecautions() {
 
 
 
-function initMap() {
-  // Map center coordinates (example: Bangalore)
-  const center = { lat: 12.9716, lng: 77.5946 };
-
-  // Create map
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: center,
-  });
-
-  // Add Safe Shelter marker
-  const shelterMarker = new google.maps.Marker({
-    position: { lat: 12.9667, lng: 77.5667 },
-    map: map,
-    title: "Safe Shelter",
-    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
-  });
-
-  // Add Hospital marker
-  const hospitalMarker = new google.maps.Marker({
-    position: { lat: 12.9762, lng: 77.6033 },
-    map: map,
-    title: "Hospital",
-    icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
-  });
-
-  // Try to get user's current location
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const userPos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-        new google.maps.Marker({
-          position: userPos,
-          map: map,
-          title: "Your Location",
-          icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-        });
-        map.setCenter(userPos); // center map to user
-      },
-      () => {
-        console.log("Geolocation permission denied or unavailable.");
-      }
-    );
-  } else {
-    console.log("Geolocation not supported by this browser.");
-  }
-}
